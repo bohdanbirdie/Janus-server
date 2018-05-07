@@ -11,7 +11,8 @@
     "start:prod": "node dist/main.js",
     "test": "jest",
     "test:cov": "jest --coverage",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "broker": "node ./src/mqtt/broker.ts"
   },
   "dependencies": {
     "@nestjs/common": "^4.5.9",
@@ -19,6 +20,8 @@
     "@nestjs/microservices": "^4.5.8",
     "@nestjs/testing": "^4.5.5",
     "@nestjs/websockets": "^4.5.8",
+    "axios": "^0.18.0",
+    "dotenv": "^5.0.1",
     "mosca": "^2.8.1",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^5.5.6",
