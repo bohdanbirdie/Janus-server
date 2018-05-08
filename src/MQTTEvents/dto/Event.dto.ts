@@ -1,13 +1,13 @@
-import {IsString, IsInt, IsBoolean} from 'class-validator';
+import { IsString, IsInt, IsBoolean } from "class-validator";
 
 export class EventDto {
-    @IsString() readonly topic: string;
+  @IsString() readonly topic: string;
 
-    @IsString() readonly payload: string;
+  @IsString() readonly payload: string;
 
-    @IsString() readonly messageId: string;
+  @IsString() readonly messageId: string;
 
-    @IsInt() readonly qos: number;
+  @IsInt() readonly qos: number;
 
-    @IsBoolean() readonly retain: boolean;
+  @IsBoolean() readonly retain: boolean;
 }
