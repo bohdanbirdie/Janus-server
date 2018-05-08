@@ -1,31 +1,16 @@
-import { Get, Post, Controller, Body, ValidationPipe } from '@nestjs/common';
-import { IsString, IsInt, IsBoolean } from 'class-validator';
-import { EventsService } from './events.service'
+import {Get, Post, Controller, Body, ValidationPipe} from '@nestjs/common';
+import {EventsService} from './events.service';
 
-class EventDto {
-    @IsString()
-    readonly topic: string;
-
-    @IsString()
-    readonly payload: string;
-
-    @IsString()
-    readonly messageId: string;
-
-    @IsInt()
-    readonly qos: number;
-
-    @IsBoolean()
-    readonly retain: boolean
-}
+import { EventDto } from './dto/Event.dto';
 
 @Controller('events')
 export class EventsController {
-    constructor(private readonly eventsService: EventsService) {}
+    constructor(private readonly eventsService: EventsService) {
+    }
 
     @Get()
     findAll() {
-        return [1,2,3,4];
+        return [1, 2, 3, 4];
     }
 
     @Post()
