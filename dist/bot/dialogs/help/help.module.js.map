@@ -1,0 +1,1 @@
+{"version":3,"file":"help.module.js","sourceRoot":"","sources":["../../../../src/bot/dialogs/help/help.module.ts"],"names":[],"mappings":";;;;;;;;AAAA,2CAAwC;AACxC,+CAA2C;AAM3C,IAAa,gBAAgB,GAA7B;CACE,CAAA;AADW,gBAAgB;IAJ5B,eAAM,CAAC;QACJ,UAAU,EAAE,CAAC,wBAAU,CAAC;QACxB,OAAO,EAAE,CAAC,wBAAU,CAAC;KACxB,CAAC;GACW,gBAAgB,CAC3B;AADW,4CAAgB"}
