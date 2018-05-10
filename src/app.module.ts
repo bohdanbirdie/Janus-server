@@ -17,12 +17,19 @@ import {BotModule} from './bot/bot.module';
 
 @Module({
     imports: [
-        MongooseModule.forRoot('mongodb://localhost/janus'),
-        MongooseModule.forFeature([{name: 'User', schema: UserSchema}]),
+        // MongooseModule.forRoot('mongodb://localhost/janus'),
+        // MongooseModule.forFeature([{name: 'User', schema: UserSchema}]),
         BotModule,
     ],
-    controllers: [AppController, EventsController, UsersController],
-    components: [EventsService, BotService, UsersService]
+    controllers: [AppController,
+        // EventsController,
+        // UsersController
+    ],
+    components: [
+        // EventsService,
+        // BotService,
+        // UsersService
+    ]
 })
 export class AppModule implements NestModule {
     configure(consumer: MiddlewaresConsumer): void {
