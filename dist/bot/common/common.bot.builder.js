@@ -16,6 +16,7 @@ let Botbuilder = class Botbuilder {
     constructor(botConnector) {
         this.botConnector = botConnector;
         this.bot = new builder.UniversalBot(botConnector.connector, [function (session) {
+                console.log(session.message.address);
                 session.send("You said: %s", session.message.text);
             }]);
     }

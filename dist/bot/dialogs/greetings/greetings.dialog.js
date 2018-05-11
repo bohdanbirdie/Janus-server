@@ -17,11 +17,13 @@ let GreetingsDialog = class GreetingsDialog {
         this.botBuilder = botBuilder;
         this.dialogId = 'greetings';
         botBuilder.bot.dialog(this.dialogId, this.dialog()).triggerAction({ matches: /^hello/i });
+        global.bot = botBuilder.bot;
     }
     dialog() {
         return [
             function (session, results, next) {
                 builder.Prompts.text(session, "Hello... What's your name?");
+                console.log(session);
             },
             function (session, results, next) {
                 session.userData.name = results.response;
