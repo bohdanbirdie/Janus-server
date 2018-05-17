@@ -1,7 +1,17 @@
+import { IAddress } from "botbuilder";
+
 export class CreateUserDto {
-  readonly id: string;
-  readonly name: string;
-  readonly dm_id: string;
+  readonly slack_id: string;
+  readonly telegram_id: string;
+  readonly slack_name: string;
+  readonly telegram_name: string;
+  address: AddressDto;
   role: string[];
-  subscription: string[];
+  subscription: object[];
+  introduced: string[];
+}
+
+class AddressDto {
+  slack: IAddress;
+  telegram: IAddress;
 }

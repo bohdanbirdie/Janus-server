@@ -939,7 +939,14 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-botbuilder@^3.15.0:
+botbuilder-mongodb-storage@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/botbuilder-mongodb-storage/-/botbuilder-mongodb-storage-0.0.3.tgz#f754d25868d5d86422ad516506d1881cbf3977c7"
+  dependencies:
+    botbuilder "^3.14.0"
+    mongodb "^2.2.34"
+
+botbuilder@^3.14.0, botbuilder@^3.15.0:
   version "3.15.0"
   resolved "https://registry.yarnpkg.com/botbuilder/-/botbuilder-3.15.0.tgz#394e7abd35a0781c0365df62ee953fcedfa6d50c"
   dependencies:
@@ -4132,7 +4139,7 @@ mongodb@3.0.7:
   dependencies:
     mongodb-core "3.0.7"
 
-mongodb@^2.1.18:
+mongodb@^2.1.18, mongodb@^2.2.34:
   version "2.2.35"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-2.2.35.tgz#cd1b5af8a9463e3f9a787fa5b3d05565579730f9"
   dependencies:
