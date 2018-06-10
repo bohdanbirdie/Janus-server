@@ -7,7 +7,8 @@ interface Address extends Document {
   telegram: IAddress;
 }
 
-interface Subscription extends Document {
+export interface Subscription extends Document {
+  id: string;
   slack: boolean;
   telegram: boolean;
 }

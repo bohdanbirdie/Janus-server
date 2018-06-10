@@ -7,6 +7,7 @@ const AddressSchema = new mongoose.Schema({
 });
 
 const SubscriptionSchema = new mongoose.Schema({
+  id: String,
   slack: Boolean,
   telegram: Boolean
 });

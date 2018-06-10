@@ -7,10 +7,9 @@ export class BotConnector {
   connector: builder.ChatConnector;
 
   constructor() {
-    console.log(process.env.MicrosoftAppId);
     this.connector = new builder.ChatConnector({
       appId: process.env.MicrosoftAppId,
-      appPassword: process.env.MicrosoftAppPassword
+      appPassword: process.env.MicrosoftAppPassword,
     });
   }
 }
